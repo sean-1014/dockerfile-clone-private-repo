@@ -8,7 +8,7 @@ Steps:
 ```bash
 $ eval $(ssh-agent)
 Agent pid 7267
-$ ssh-add /path/to/private_key
+$ ssh-add /path/to/private-key
 ```
 3. Build your image using the following command:
 ```bash
