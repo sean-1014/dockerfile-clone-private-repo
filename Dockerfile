@@ -4,5 +4,5 @@ USER root
 RUN apk update && \
     apk add --no-cache openssh-client git && \
     mkdir -p -m 0700 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
-RUN --mount=type=ssh git clone git@github.com:sean-1014/private_repo.git
+RUN --mount=type=ssh git clone git@github.com:sean-1014/private-repo.git
 CMD ["cat","private_repo/README.md"]
